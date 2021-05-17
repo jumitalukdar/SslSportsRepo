@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-17T01:03:53 PDT" name="Suite" finished-at="2021-05-17T01:04:23 PDT" duration-ms="30167">
+    <groups>
+    </groups>
+    <test started-at="2021-05-17T01:03:53 PDT" name="TestNG" finished-at="2021-05-17T01:04:23 PDT" duration-ms="30167">
+      <class name="restTestpackage.restTest">
+        <test-method signature="validateHeaderType()[pri:0, instance:restTestpackage.restTest@1649b0e6]" started-at="2021-05-17T01:04:18 PDT" name="validateHeaderType" finished-at="2021-05-17T01:04:20 PDT" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHeaderType -->
+        <test-method signature="validateStatusCode()[pri:0, instance:restTestpackage.restTest@1649b0e6]" started-at="2021-05-17T01:04:20 PDT" name="validateStatusCode" finished-at="2021-05-17T01:04:21 PDT" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCode -->
+        <test-method signature="validateTitle()[pri:0, instance:restTestpackage.restTest@1649b0e6]" started-at="2021-05-17T01:04:21 PDT" name="validateTitle" finished-at="2021-05-17T01:04:22 PDT" duration-ms="1183" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Tres convoco stabilis ars expedita strenuus ut damno et somniculosus deinde valetudo auctor repudiandae utroque aeneus.] but found [Tumultus denuo carpo aetas censura vae utique degero deficio demitto convoco tenetur paens quidem.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Tres convoco stabilis ars expedita strenuus ut damno et somniculosus deinde valetudo auctor repudiandae utroque aeneus.] but found [Tumultus denuo carpo aetas censura vae utique degero deficio demitto convoco tenetur paens quidem.]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at restTestpackage.restTest.validateTitle(restTest.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method signature="validateUserId()[pri:0, instance:restTestpackage.restTest@1649b0e6]" started-at="2021-05-17T01:04:22 PDT" name="validateUserId" finished-at="2021-05-17T01:04:23 PDT" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserId -->
+      </class> <!-- restTestpackage.restTest -->
+      <class name="seleniumtestpackage.testClass">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumtestpackage.testClass@6a6afff2]" started-at="2021-05-17T01:03:53 PDT" name="setUp" finished-at="2021-05-17T01:03:59 PDT" duration-ms="5512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validatehomepage()[pri:1, instance:seleniumtestpackage.testClass@6a6afff2]" started-at="2021-05-17T01:03:59 PDT" name="validatehomepage" finished-at="2021-05-17T01:04:05 PDT" duration-ms="6296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatehomepage -->
+        <test-method signature="validateaddtoCart()[pri:2, instance:seleniumtestpackage.testClass@6a6afff2]" started-at="2021-05-17T01:04:05 PDT" name="validateaddtoCart" finished-at="2021-05-17T01:04:14 PDT" duration-ms="8811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateaddtoCart -->
+        <test-method signature="validateguestlogin()[pri:3, instance:seleniumtestpackage.testClass@6a6afff2]" started-at="2021-05-17T01:04:14 PDT" name="validateguestlogin" finished-at="2021-05-17T01:04:14 PDT" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateguestlogin -->
+        <test-method signature="validatasecurechkout()[pri:4, instance:seleniumtestpackage.testClass@6a6afff2]" started-at="2021-05-17T01:04:14 PDT" name="validatasecurechkout" finished-at="2021-05-17T01:04:18 PDT" duration-ms="3911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatasecurechkout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:seleniumtestpackage.testClass@6a6afff2]" started-at="2021-05-17T01:04:18 PDT" name="teardown" finished-at="2021-05-17T01:04:18 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- seleniumtestpackage.testClass -->
+    </test> <!-- TestNG -->
+  </suite> <!-- Suite -->
+</testng-results>
