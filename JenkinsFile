@@ -1,0 +1,34 @@
+pipeline {
+
+agent any
+   
+    
+    stages{
+    
+      stage('scm push"){
+           steps{
+           
+                git 'https://github.com/jumitalukdar/assignment'
+           }
+      
+    
+        stage("build and test") {
+           steps{
+    
+              git 'https://github.com/jumitalukdar/assignment'
+              bat(/mvn clean test/)
+    }
+    
+    
+     stage("publish reports"){
+         steps{
+         
+         ([@class : 'Publisher', reportFilenamePattern]:'**/testng-results.xml'])
+         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\Users\\Abhij\\eclipse-workspace\\sslProject\\test-output\\', reportFiles: 'Extent.html', reportName: 'Extent Report', reportTitles: ''])
+     
+     }
+     }
+     }
+     }
+     
+    
